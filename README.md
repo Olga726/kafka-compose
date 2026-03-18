@@ -25,7 +25,7 @@ echo "Hello everyone" | /usr/bin/kafka-console-producer --broker-list localhost:
 # --broker-list localhost:9092 — внутренний порт Kafka внутри контейнера (localhost в контейнере = сам контейнер Kafka).
 # --topic Test — имя топика.
 
-# Консумер для проверки (Это выведет все сообщения)
+# Консумер для проверки (выведет все сообщения --from-beginning)
 /usr/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic Test --from-beginning
 
 
